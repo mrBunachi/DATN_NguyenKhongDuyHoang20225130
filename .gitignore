@@ -1,0 +1,24 @@
+# Moi truong ao
+venv/
+.venv/
+env/
+
+# Python cache va bien dich
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Thu muc cau hinh cua VS Code hoac IDE
+.vscode/
+.idea/
+
+# Du lieu huan luyen va tep do luong phinh to (khong can day len github)
+dataset/
+runs/detect/train_chinh_thuc/val*/
+
+# Cac tep log nang hoac tep tam
+*.log
+.DS_Store
+Thumbs.db
