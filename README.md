@@ -25,3 +25,24 @@ Output/
 ├── test_webcam.py                # Kịch bản thực thi kiểm thử luồng hình ảnh thời gian thực
 ├── .gitignore                    # Các tệp ngoại trừ khi đồng bộ Git
 └── README.md                     # Tài liệu hướng dẫn hệ thống
+
+## 3. Hướng dẫn cài đặt và vận hành
+
+### Yêu cầu hệ thống
+* Python 3.10 hoặc cao hơn
+* Trình biên dịch Arduino IDE (cho phần mã nguồn nhúng)
+
+### Các bước khởi chạy bộ định tuyến biên
+
+1. Khởi tạo và kích hoạt môi trường ảo Python:
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+Cài đặt các gói thư viện phụ thuộc:
+
+```bash
+pip install ultralytics openvino opencv-python
+Kết nối vào mạng không dây do ESP32-CAM phát ra (ESP32_CAM_HOTSPOT), sau đó thực thi kịch bản xử lý kiểm thử:
+
+```bash
+python test_webcam.py
