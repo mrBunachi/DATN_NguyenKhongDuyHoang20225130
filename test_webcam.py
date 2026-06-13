@@ -23,7 +23,7 @@ while True:
         break
 
     # day frame vao model chay thoi
-    results = model(frame, imgsz=640, verbose=False)
+    results = model(frame, imgsz=640, conf=0.5, verbose=False)
 
     # lay ket qua ve cai box tren anh
     annotated_frame = results[0].plot()
