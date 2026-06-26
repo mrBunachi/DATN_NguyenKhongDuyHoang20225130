@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 
 # update lai duong dan chuan roi nha k so loi nua
-model_path = r"E:\Documents\20252\DATN\Output\runs\detect\train_chinh_thuc\weights\best_int_openvino_model"
+model_path = r"runs\detect\train_chinh_thuc\weights\best_int_openvino_model"
 
 # load cai model len, set task detect luon cho chac
 model = YOLO(model_path, task='detect')

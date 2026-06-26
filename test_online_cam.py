@@ -5,7 +5,7 @@ import numpy as np
 from ultralytics import YOLO
 
 # update laj dduog ddan chuan k loj nua
-model_path = r"E:\Documents\20252\DATN\Output\runs\detect\train_chinh_thuc\weights\best_int_openvino_model"
+model_path = r"runs\detect\train_chinh_thuc\weights\best_int_openvino_model"
 model = YOLO(model_path, task='detect')
 
 # THAY ddoj: ddam bao ddug IP moj lay tu serial monitor
