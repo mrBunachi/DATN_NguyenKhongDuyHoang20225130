@@ -34,6 +34,7 @@ client.loop_start() # Chạy thread ngầm xử lý mạng
 # ==========================================
 model_path = r"runs\detect\train_chinh_thuc\weights\best_int_openvino_model"
 model = YOLO(model_path, task='detect')
+# Link này có thể thay đổi, cần check lại trong arduino ide
 stream_url = "http://192.168.1.15/stream"
 
 print("Đang kết nối qua thư viện requests... ấn q để thoát")
